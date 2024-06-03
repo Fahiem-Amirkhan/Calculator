@@ -1,0 +1,69 @@
+:root{
+    --background-calc-board: #000000;
+    --background-display-board: #696969;
+    --text-color-numbers: #DAA520;
+    --color-calc-numbers: #00FFFF;
+}
+
+body{
+    background-color: firebrick;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator{
+    background-color: var(--background-calc-board);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.input-display{
+    background-color: var(--background-display-board);
+    color: var(--color-calc-numbers);
+}
+
+.number-pad{
+    background-color: var(--text-color-numbers);
+    color: #000000;
+}
+
+.button-calc{
+    background-color: var(--color-calc-numbers);
+    color: #000000;
+}
+
+.calculator div input{
+    border: 0;
+    outline: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.display-class{
+    display: flex;
+    justify-content: flex-end;
+    margin: 10px 0;
+}
+
+.display-class input{
+    text-align: right;
+    flex: 1;
+    font-size: 45px;
+}

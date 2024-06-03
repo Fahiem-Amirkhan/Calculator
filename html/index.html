@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <div class="display-class">
+                <input class="input-display" type="text" name="display">
+            </div>
+            <div>
+                <input class="button-calc" type="button" value="AC" onclick="clearDisplay()">
+                <input class="button-calc" type="button" value="DE" onclick="deleteNumber()">
+                <input class="button-calc" type="button" value="." onclick="showOnDisplay('.')">
+                <input class="button-calc" type="button" value="/" onclick="showOnDisplay('/')">
+            </div>
+            <div>
+                <input class="number-pad" type="button" value="7" onclick="showOnDisplay('7')">
+                <input class="number-pad" type="button" value="8" onclick="showOnDisplay('8')">
+                <input class="number-pad" type="button" value="9" onclick="showOnDisplay('9')">
+                <input class="button-calc" type="button" value="*" onclick="showOnDisplay('*')">
+            </div>
+            <div>
+                <input class="number-pad" type="button" value="4" onclick="showOnDisplay('4')">
+                <input class="number-pad" type="button" value="5" onclick="showOnDisplay('5')">
+                <input class="number-pad" type="button" value="6" onclick="showOnDisplay('6')">
+                <input class="button-calc" type="button" value="-" onclick="showOnDisplay('-')">
+            </div>
+            <div>
+                <input class="number-pad" type="button" value="1" onclick="showOnDisplay('1')">
+                <input class="number-pad" type="button" value="2" onclick="showOnDisplay('2')">
+                <input class="number-pad" type="button" value="3" onclick="showOnDisplay('3')">
+                <input class="button-calc" type="button" value="+" onclick="showOnDisplay('+')">
+            </div>
+            <div>
+                <input class="number-pad" type="button" value="00" onclick="showOnDisplay('00')">
+                <input class="number-pad" type="button" value="0" onclick="showOnDisplay('0')">
+                <input class="button-calc" type="button" value="=" onclick="result('=')">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
